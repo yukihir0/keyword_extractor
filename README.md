@@ -1,29 +1,39 @@
 # KeywordExtractor
 
-TODO: Write a gem description
+'keyword_extractor' provides feature for extracting keyword from document.
 
-## Installation
+## Requirements
+
+- ruby 1.9
+- [noun_extractor](https://github.com/yukihir0/noun_extractor)
+- [tf_idf_engine](https://github.com/yukihir0/tf_idf_engine)
+
+## Install
 
 Add this line to your application's Gemfile:
 
-    gem 'keyword_extractor'
+ ```
+gem 'keyword_extractor', :github => 'yukihir0/keyword_extractor'
+```
 
 And then execute:
 
-    $ bundle
+```
+% bundle install
+```
 
-Or install it yourself as:
+## How to use
 
-    $ gem install keyword_extractor
+```
+doc = 'this is a test document'
+extractor = KeywordExtractor.new
 
-## Usage
+keyword_list = extractor.analyze(doc)
+p keyword_list
+```
 
-TODO: Write usage instructions here
+For more information, please see [here](https://github.com/yukihir0/keyword_extractor/blob/master/sample/main.rb).
 
-## Contributing
+## License
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Copyright &copy; 2013 yukihir0
