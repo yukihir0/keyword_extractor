@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - 2.0.0-p598
+  - 2.1.6
+  - 2.2.2
+before_install: bash mecab_install.sh
+script: bundle exec rake spec
+notifications:
+email: yukihiro.cotori@gmail.com
