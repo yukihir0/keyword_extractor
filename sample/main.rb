@@ -10,9 +10,9 @@ def print(mode, extractor, doc)
     puts footer, ''
 end
 
-corpus = ['これはテストです。',
-          'これもテストです。']
-doc    = 'これはテスト用のドキュメントです。'
+corpus = ['メロンとスイカです。',
+          'メロンとバナナです。']
+doc    = 'メロンとパイナップルです。'
 
 keyword_extractor = KeywordExtractor.new
 
