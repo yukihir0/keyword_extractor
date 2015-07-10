@@ -4,7 +4,7 @@
 
 ## Requirements
 
-- ruby 1.9
+- ruby >= 2.0
 - [noun_extractor](https://github.com/yukihir0/noun_extractor)
 - [tf_idf_engine](https://github.com/yukihir0/tf_idf_engine)
 
