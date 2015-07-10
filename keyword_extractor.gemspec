@@ -17,7 +17,8 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
   
-  gem.add_dependency 'noun_extractor', '>=0.1.5'
-  gem.add_dependency 'tf_idf_engine',  '>=0.0.5'
-  gem.add_development_dependency "rspec"
+  gem.add_dependency 'noun_extractor', '~>0.1.5'
+  gem.add_dependency 'tf_idf_engine',  '~>0.0.5'
+  gem.add_development_dependency "rake", "~>10.4.2"
+  gem.add_development_dependency "rspec", "~>3.3.0"
 end

@@ -8,7 +8,7 @@ describe BaseAnalyzer do
             it 'when call' do
                 analyzer       = BaseAnalyzer.new
                 word_extractor = analyzer.instance_eval('@word_extractor')
-                word_extractor.instance_of?(NounExtractor).should be_true
+                word_extractor.instance_of?(NounExtractor).should be_truthy
             end
         end
     end

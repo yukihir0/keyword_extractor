@@ -9,7 +9,7 @@ describe KeywordExtractor do
                 it 'CountAnalyzer' do
                     extractor = KeywordExtractor.new
                     analyzer  = extractor.instance_eval('@analyzer')
-                    analyzer.instance_of?(CountAnalyzer).should be_true
+                    analyzer.instance_of?(CountAnalyzer).should be_truthy
                 end
             end
         end
@@ -25,7 +25,7 @@ describe KeywordExtractor do
                 it 'CountAnalyzer' do
                     @extractor.to_count
                     analyzer = @extractor.instance_eval('@analyzer')
-                    analyzer.instance_of?(CountAnalyzer).should be_true
+                    analyzer.instance_of?(CountAnalyzer).should be_truthy
                 end
             end
         end
@@ -36,7 +36,7 @@ describe KeywordExtractor do
                     corpus = ['test corpus1', 'test corpus2']
                     @extractor.to_tf_idf(corpus)
                     analyzer = @extractor.instance_eval('@analyzer')
-                    analyzer.instance_of?(TfIdfAnalyzer).should be_true
+                    analyzer.instance_of?(TfIdfAnalyzer).should be_truthy
                 end
             end
         end
@@ -45,7 +45,7 @@ describe KeywordExtractor do
             context 'when doc input' do
                 it 'call analyzer#get_keyword_list' do
                     doc = 'test doc 01'
-                    analyzer = mock('analyzer')
+                    analyzer = double('analyzer')
                     analyzer.should_receive(:get_keyword_list).with(doc)
 
                     @extractor.instance_variable_set('@analyzer', analyzer)

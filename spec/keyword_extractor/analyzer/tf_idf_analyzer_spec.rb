@@ -30,8 +30,8 @@ describe TfIdfAnalyzer do
                 it 'TfIdfEngine' do
                     id1        = 'id_1'
                     id2        = 'id_2'
-                    noun_list1 = ['test', 'corpus', 'first'] 
-                    noun_list2 = ['test', 'corpus', 'second'] 
+                    noun_list1 = ['corpus'] 
+                    noun_list2 = ['corpus'] 
                     corpus     = ['test corpus first', 'test corpus second']
 
                     expected_engine = TfIdfEngine.new
@@ -60,9 +60,9 @@ describe TfIdfAnalyzer do
                      doc       = 'test doc 01'
                      noun_list = ['test', 'doc', '01']
 
-                     word_extractor = mock('word_extractor')
+                     word_extractor = double('word_extractor')
                      word_extractor.should_receive(:analyze).with(doc).and_return(noun_list)
-                     engine = mock('engine')
+                     engine = double('engine')
                      engine.should_receive(:analyze).with(noun_list)
 
                      @analyzer.instance_variable_set('@word_extractor', word_extractor)
