@@ -2,12 +2,12 @@
 require 'keyword_extractor'
 
 def print(mode, extractor, doc)
-    header = "--- #{mode} ---"
-    footer = '-' * header.length
-    
-    puts header
-    p extractor.analyze(doc)
-    puts footer, ''
+  header = "--- #{mode} ---"
+  footer = '-' * header.length
+
+  puts header
+  p extractor.analyze(doc)
+  puts footer, ''
 end
 
 corpus = ['メロンとスイカです。',
