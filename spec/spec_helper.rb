@@ -1,4 +1,6 @@
 # coding: utf-8
+require 'coveralls'
+Coveralls.wear!
 require 'keyword_extractor'
 require 'keyword_extractor/analyzer/base_analyzer'
 require 'keyword_extractor/analyzer/count_analyzer'

@@ -21,4 +21,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'tf_idf_engine',  '~>0.0.5'
   gem.add_development_dependency "rake", "~>10.4.2"
   gem.add_development_dependency "rspec", "~>3.3.0"
+  gem.add_development_dependency "coveralls", "~>0.8.2"
 end
