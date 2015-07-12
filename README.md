@@ -1,4 +1,4 @@
-# KeywordExtractor [![Build Status](https://travis-ci.org/yukihir0/keyword_extractor.svg?branch=master)](https://travis-ci.org/yukihir0/keyword_extractor)
+# KeywordExtractor [![Build Status](https://travis-ci.org/yukihir0/keyword_extractor.svg?branch=master)](https://travis-ci.org/yukihir0/keyword_extractor) [![Coverage Status](https://coveralls.io/repos/yukihir0/keyword_extractor/badge.svg?branch=master&service=github)](https://coveralls.io/github/yukihir0/keyword_extractor?branch=master)
 
 'keyword_extractor' provides feature for extracting keyword from document.
 
